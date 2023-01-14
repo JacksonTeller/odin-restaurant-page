@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+
+#content {
+    height: 100vh;
+    width: 100vw;
+    background-color: aquamarine;
+
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+}
+
+.header {
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+}
+
+.home, .menu, .contacts {
+    text-align: center;
+}
+
+.home:hover, .menu:hover, .contacts:hover {
+    cursor: pointer;
+}
+
+.info {
+    background-color: turquoise;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    margin-right: 132px;
+    padding-left: 28px;
+    /* text-align: start; */
+}
+
+.img {
+    border: solid black 2px;
+    width: 650px;
+    height: 400px;
+    align-self: center;
+}
+
+.footer {
+    display: grid;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* li {
+    display: flex;
+    align-items: center;
+} */
