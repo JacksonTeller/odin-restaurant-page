@@ -45,23 +45,120 @@ body {
 }
 
 .info {
-    background-color: turquoise;
+    background-color: #42312A;
+    /* background-image: url(/src/images/background-2132909_1920.jpg); */
     display: flex;
     justify-content: space-between;
 }
 
 .description {
+    color: white;
     margin-right: 132px;
     padding-left: 28px;
     /* text-align: start; */
 }
 
 .img {
-    border: solid black 2px;
-    width: 650px;
-    height: 400px;
-    align-self: center;
+    /* border: solid black 2px; */
+    /* background-image: url(./images/slide-image1.jpg); */
+    /* background-image: url(./images/hd-wallpaper-g9e0f307b9_1920.png); */
+    /* background-size: cover;
+    background-position: right; */
+    height: 100%;
+    width: 840px;
+
+    /* height: 100%; */
+    /* align-self: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* slider code */
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.manual-btn {
+    border: 2px solid #98795C;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #98795C;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+#radio1:checked ~ .navigation-manual .btn1 {
+    background-color: #98795C;
+}
+
+#radio2:checked ~ .navigation-manual .btn2 {
+    background-color: #98795C;
+}
+
+#radio3:checked ~ .navigation-manual .btn3 {
+    background-color: #98795C;
+}
+
+#radio4:checked ~ .navigation-manual .btn4 {
+    background-color: #98795C;
+}
+
+/* slider code end */
 
 .footer {
     display: grid;
