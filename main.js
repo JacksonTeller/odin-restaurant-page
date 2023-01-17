@@ -1,1 +1,1 @@
-console.log("My restaurant page!");
+(()=>{console.log("My restaurant page!");let e=1;setInterval((function(){document.getElementById("radio"+e).checked=!0,e++,e>4&&(e=1)}),5e3)})();
