@@ -52,7 +52,7 @@ body {
 
 .home:hover, .menu:hover, .contacts:hover {
     cursor: pointer;
-    box-shadow: 0px -30px 5px inset;
+    box-shadow: 0px -30px 1.25rem -1rem #98795C inset;
     background-color: var(--header-backgroud);
     /* opacity: 0.7; */
 }
