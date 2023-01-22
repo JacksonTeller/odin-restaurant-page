@@ -24,6 +24,7 @@ body {
     grid-template-rows: 12% 1fr 8%;
 }
 
+/* home page */
 .header {
     font-family: Tahoma, sans-serif;
 
@@ -181,3 +182,24 @@ li {
     align-items: center;
     gap: 4px;
 }
+
+/* menu page */
+/* header and footer are the same */
+
+.menu-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div[class^='item'] {
+    display: flex;
+    border: 2px solid black;
+}
+
+div[class^='desc-item'] {
+    font-size: 2rem;
+    padding-left: 1em;
+}
+
+/* add bottom border to the header in a .js file */
