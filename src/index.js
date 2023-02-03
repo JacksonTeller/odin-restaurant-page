@@ -7,10 +7,6 @@ import { createInfoContacts } from "./script-contacts";
 
 let content = document.querySelector('#content');
 
-// content.appendChild(createHeader());
-// content.appendChild(createInfoHome());
-// content.appendChild(createFooter());
-
 let children = [
     createHeader(),
     createInfoHome(),
@@ -42,4 +38,4 @@ content.addEventListener('click', (e) => {
     }
 });
 
-// create a list and with eventListener change the middle element
+// home page fix extra space at the bottom of the page
