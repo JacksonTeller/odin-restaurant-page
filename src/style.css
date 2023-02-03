@@ -199,7 +199,95 @@ div[class^='item'] {
 
 div[class^='desc-item'] {
     font-size: 2rem;
+    padding-top: 1em;
     padding-left: 1em;
+    white-space: pre-line; 
+}
+/* add bottom border to the header in a .js file */
+
+/* contacts page */
+
+.contacts-page {
+    border: 4px double #f2d8c2;
+    border-radius: 30px;
+    margin: 2em auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25em 2em;
 }
 
-/* add bottom border to the header in a .js file */
+.contacts-page img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.address {
+    /* border: 2px solid black; */
+    display: flex;
+    padding: 2em 0;
+    border-bottom: 3px solid #2b2321;
+}
+
+.address-img {
+    width: 30%;
+}
+
+.address-text {
+    width: 60%;
+    align-self: flex-end;
+    padding-left: 2em;
+}
+
+.owner {
+    /* border: 2px solid black; */
+    display: flex;
+    /* padding: 1em; */
+    padding: 2em 0;
+    border-bottom: 3px solid #2b2321;
+}
+
+.owner-img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.owner-img img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.owner-info {
+    align-self: flex-end;
+    padding-left: 2em;
+}
+
+.contacts-page a {
+    text-decoration: none;
+    color: #f2a679;
+}
+
+.thanks {
+    /* border: 2px solid black; */
+    display: flex;
+    padding: 2em 0;
+    /* padding: 1em; */
+}
+
+.thanks-img {
+    width: 30%;
+}
+
+.thanks-links {
+    align-self: flex-start;
+    padding-left: 2em;
+
+    height: 190px;
+    overflow: scroll;
+}
+
+.thanks-links > p {
+    margin: 0;
+    margin-bottom: 1em;
+}
