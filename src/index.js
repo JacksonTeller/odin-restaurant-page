@@ -1,5 +1,3 @@
-console.log('My restaurant page!!!')
-
 import { createHeader, createFooter, appendChildren, removeChildren } from "./script-footer-and-header";
 import { createInfoHome, slideShow } from "./script-home";
 import { createInfoMenu } from "./script-menu";
@@ -13,29 +11,29 @@ let children = [
     createFooter()
 ];
 
-
+// create home page on load
 window.addEventListener('load', () => {
     appendChildren(content, children);
     slideShow();
 });
 
 content.addEventListener('click', (e) => {
-    console.log(e.target.classList);
+    // create menu page
     if(e.target.classList.contains('menu')) {
         removeChildren(content, children);
         children[1] = createInfoMenu();
         appendChildren(content, children);
     }
+    // create contacts page
     if(e.target.classList.contains('contacts')) {
         removeChildren(content, children);
         children[1] = createInfoContacts();
         appendChildren(content, children);
     }
+    // create home page on click
     if(e.target.classList.contains('home')) {
         removeChildren(content, children);
         children[1] = createInfoHome();
         appendChildren(content, children);
     }
 });
-
-// home page fix extra space at the bottom of the page
