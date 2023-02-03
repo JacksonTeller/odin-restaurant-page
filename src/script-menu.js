@@ -21,7 +21,7 @@ const createInfoMenu = () => {
         let item = createNewElement('div',`item${i}`);
         
         let img = document.createElement('img');
-        img.setAttribute('src',`../src/images/item${i}.png`);
+        img.setAttribute('src',`./images/item${i}.png`);
         img.setAttribute('alt', `item${i}`);
 
         let descItem = createNewElement('div',`desc-item${i}`);

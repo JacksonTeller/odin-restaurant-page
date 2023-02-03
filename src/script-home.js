@@ -43,7 +43,7 @@ const createInfoHome = () => {
         i === 1 ? slide.classList.add('first') : false;
 
         let img = document.createElement('img');
-        img.setAttribute('src', `../src/images/slide${i}${i}.jpg`);
+        img.setAttribute('src', `./images/slide${i}${i}.jpg`);
         img.setAttribute('alt', `slide${i}`);
         slide.appendChild(img);
         slidesContent.push(slide);

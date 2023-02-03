@@ -29,7 +29,7 @@ const createAddress = () => {
     // create address-img class
     let addressImg = createNewElement('div', 'address-img');
     let img = document.createElement('img');
-    img.setAttribute('src', '../src/images/coffee-shop.jpg');
+    img.setAttribute('src', './images/coffee-shop.jpg');
     img.setAttribute('alt', 'coffee-shop');
     addressImg.appendChild(img);
     children.push(addressImg);
@@ -47,7 +47,7 @@ const createOwner = () => {
     // create owner-img class
     let ownerImg = createNewElement('div','owner-img');
     let img = document.createElement('img');
-    img.setAttribute('src', '../src/images/person.png');
+    img.setAttribute('src', './images/person.png');
     img.setAttribute('alt', 'person');
     ownerImg.appendChild(img);
     children.push(ownerImg);
@@ -69,7 +69,7 @@ const createThanks = () => {
     // create thanks-img class
     let thanksImg = createNewElement('div', 'thanks-img');
     let img = document.createElement('img');
-    img.setAttribute('src', '../src/images/thanks.jpg');
+    img.setAttribute('src', './images/thanks.jpg');
     img.setAttribute('alt', 'coffee-heart');
     thanksImg.appendChild(img);
     children.push(thanksImg);
