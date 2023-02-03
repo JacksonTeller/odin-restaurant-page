@@ -174,13 +174,18 @@ ul {
     padding: 0;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
 }
 
 li {
+    height: 100%;
     display: flex;
     align-items: center;
     gap: 4px;
+}
+
+li p {
+    margin: 0;
 }
 
 /* menu page */
